@@ -1,19 +1,12 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
 from analisis import contar_caracteres, buscar_caracter, mostrar_invertida
+from utilidades import menu_de_opciones
 
 continuar = True
 
 while continuar:
-    print("1) Ingresar contraseña")
-    print("2) validar nivel de seguridad")
-    print("3) contar tipos de caracteres")
-    print("4) buscar caracter especifico")
-    print("5) mostrar contraseña invertida")
-    print("6) generar reporte estadistico")
-    print("7) verificar si es palindromo")
-    print("8) ordenar caracteres de la contraseña")
-    print("9) salir")
     
+    menu_de_opciones()
     ingresar_opcion = int(input("Ingresa una opcion: "))
 
     match ingresar_opcion: 
