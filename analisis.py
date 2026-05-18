@@ -36,12 +36,6 @@ def buscar_caracter(contrasenia):
 
     return mensaje
 
-"""Mostrar contraseña invertida 
-
-Mostrar la contraseña invertida. 
-
-No se permite utilizar funciones avanzadas ni slicing. 
-        """
 def mostrar_invertida(contrasenia):
 
     invertida = ""
@@ -52,5 +46,18 @@ def mostrar_invertida(contrasenia):
     mensaje = f"Contraseña invertida: {invertida}"
 
     return mensaje
+
+"""  Verificar si es palíndromo 
+
+Determinar si la contraseña se lee igual de izquierda a derecha y de derecha a izquierda. """
+
+def verificar_palindromo(contrasenia):
+
+    invertida = ""
+
+    for i in range(len(contrasenia) - 1, -1, -1):
+        invertida += contrasenia[i]
+
+   
 
   
