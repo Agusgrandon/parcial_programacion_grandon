@@ -26,6 +26,7 @@ Este programa permite ingresar una contraseña y realizar distintos análisis so
 
 # 📂 Estructura del proyecto
 
+```bash
 📦 parcial_programacion_uno
  ┣ 📜 main.py
  ┣ 📜 validaciones.py
@@ -121,7 +122,7 @@ Determina si la contraseña se lee igual de izquierda a derecha y viceversa.
 
 ## 8️⃣ Ordenar caracteres de la contraseña
 
-Ordenamiento implementado manualmente utilizando algoritmo Bubble Sort.
+Ordenamiento utilizando algoritmo Bubble Sort.
 
 Opciones:
 
@@ -132,13 +133,17 @@ Opciones:
 
 # 🚀 Cómo ejecutar el proyecto
 
-1. Clonar el repositorio: 
+1. Clonar el repositorio:
 
+```bash
 git clone https://github.com/Agusgrandon/parcial_programacion_grandon.git
+```
 
 2. Ejecutar el archivo principal:
 
+```bash
 python main.py
+```
 
 ---
 
@@ -147,4 +152,5 @@ python main.py
 Proyecto desarrollado por agus :)
 
 ---
+
 
