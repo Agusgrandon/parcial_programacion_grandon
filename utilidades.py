@@ -1,6 +1,6 @@
 from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descendente
 
-def verificar_letra(contrasenia: str) -> bool:
+def verificar_letra(contrasenia:str) -> bool:
     """analiza si la frase recibida contiene una letra
 
     Args: contrasenia (str): Contraseña ingresada por el usuario.

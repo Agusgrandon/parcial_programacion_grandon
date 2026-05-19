@@ -1,5 +1,12 @@
-def reporte_estadistico(contrasenia):
+def reporte_estadistico(contrasenia:str) -> str:
+    """Realiza un reporte estadistico de una contraseña. 
+    La funcion saca un porcentaje de la cantidad de letras, numeros y caracteres especiales presentes en la contraseña, ademas de
+    indicar la longitud y mostrar los caracteres que se repiten de forma consecutiva.
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje con el total de los porcentajes, la longitud y los caracteres repetidos. 
+    """
     longitud = len(contrasenia)
     contador_letras = 0
     contador_numeros = 0

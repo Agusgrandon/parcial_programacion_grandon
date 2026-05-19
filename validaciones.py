@@ -13,7 +13,7 @@ def solicitar_contrasenia() -> str:
 
     return contrasenia
 
-def nivel_de_seguridad(contrasenia: str) -> str:
+def nivel_de_seguridad(contrasenia:str) -> str:
     """Determina el nivel de seguridad de la contraseña ingresada por el usuario.
 
     Args: contrasenia (str): Contraseña ingresada por el usuario.
