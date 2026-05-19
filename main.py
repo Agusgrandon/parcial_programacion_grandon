@@ -4,7 +4,6 @@ from utilidades import menu_de_opciones, menu_opcion_de_orden
 from estadisticas import reporte_estadistico
 
 continuar = True
-
 print("Bienvenido al sistema de procesamiento de contraseñas 👨‍💻.\n")
 
 while continuar:

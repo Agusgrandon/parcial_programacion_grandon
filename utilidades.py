@@ -1,53 +1,8 @@
 from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descendente
 
-def verificar_letra(contrasenia:str) -> bool:
-    """analiza si la frase recibida contiene una letra
-
-    Args: contrasenia (str): Contraseña ingresada por el usuario.
-
-    Returns: bool: True si la contraseña contiene una letra, False en caso contrario.
-    """
-    letra = False
-
-    for i in range(len(contrasenia)):
-        if ((contrasenia[i] >= 'a' and contrasenia[i] <= 'z') or (contrasenia[i] >= 'A' and contrasenia[i] <= 'Z')):
-            letra = True
-
-    return letra
-
-def verificar_numero(contrasenia:str) -> bool:
-    """analiza si la frase recibida contiene un numero
-
-    Args: contrasenia (str): Contraseña ingresada por el usuario.
-
-    Returns: bool: True si la contraseña contiene un numero, False en caso contrario.
-    """
-    numero = False
-
-    for i in range(len(contrasenia)):
-        if contrasenia[i] >= '0' and contrasenia[i] <= '9':
-            numero = True
-
-    return numero
-
-def verificar_caracter_especial(contrasenia:str) -> bool:
-    """analiza si la frase recibida contiene un caracter especial
-
-    Args: contrasenia (str): Contraseña ingresada por el usuario.
-
-    Returns: bool: True si la contraseña contiene un caracter especial, False en caso contrario.
-    """
-    caracter = False
-
-    for i in range(len(contrasenia)):
-        if contrasenia[i] >= '!' and contrasenia[i] <= '/':
-            caracter = True
-    
-    return caracter
-
 def menu_de_opciones():
     """Muestra por pantalla el menú principal de opciones del programa."""
-    
+
     print("1) Ingresar contraseña")
     print("2) Validar nivel de seguridad")
     print("3) Contar tipos de caracteres")
