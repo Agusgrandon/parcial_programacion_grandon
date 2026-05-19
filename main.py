@@ -1,5 +1,5 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
-from analisis import contar_caracteres, buscar_caracter, mostrar_invertida
+from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo
 from utilidades import menu_de_opciones
 
 continuar = True
@@ -28,7 +28,8 @@ while continuar:
         case 6:
             print("hola")
         case 7:
-            print("hola")
+            palabra_palindromo = verificar_palindromo(contrasenia)
+            print(palabra_palindromo)
         case 8:
             print("hola")
         case 9:

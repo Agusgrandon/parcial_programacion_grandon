@@ -47,10 +47,6 @@ def mostrar_invertida(contrasenia):
 
     return mensaje
 
-"""  Verificar si es palíndromo 
-
-Determinar si la contraseña se lee igual de izquierda a derecha y de derecha a izquierda. """
-
 def verificar_palindromo(contrasenia):
 
     invertida = ""
@@ -58,6 +54,11 @@ def verificar_palindromo(contrasenia):
     for i in range(len(contrasenia) - 1, -1, -1):
         invertida += contrasenia[i]
 
-   
+    if invertida == contrasenia:
+        mensaje = f"La palabra es palíndromo "
+    else:
+        mensaje = f"La palabra no es palíndromo "
+
+    return mensaje
 
   
