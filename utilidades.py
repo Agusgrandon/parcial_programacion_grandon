@@ -1,5 +1,10 @@
 from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descendente
 
+def titulo_del_programa():
+    """Muestra por pantalla el titulo del programa."""
+    
+    print("Bienvenido al sistema de procesamiento de contraseñas 👨‍💻.\n")
+
 def menu_de_opciones():
     """Muestra por pantalla el menú principal de opciones del programa."""
 
@@ -31,6 +36,6 @@ def menu_opcion_de_orden(contrasenia:str) -> str:
     elif opcion == "b" or opcion == "B":
         ordenar = ordenar_contraseña_descendente(contrasenia)
     else:
-        ordenar = f"La opcion ingresada no es correcta"
+        ordenar = f"La opcion ingresada no es correcta.\n"
     
     return ordenar

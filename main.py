@@ -1,10 +1,10 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
 from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo
-from utilidades import menu_de_opciones, menu_opcion_de_orden
+from utilidades import menu_de_opciones, menu_opcion_de_orden, titulo_del_programa
 from estadisticas import reporte_estadistico
 
 continuar = True
-print("Bienvenido al sistema de procesamiento de contraseñas 👨‍💻.\n")
+titulo_del_programa()
 
 while continuar:
 
