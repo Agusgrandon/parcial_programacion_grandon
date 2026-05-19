@@ -1,6 +1,12 @@
 from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descendente
 
-def verificar_letra(contrasenia):
+def verificar_letra(contrasenia: str) -> bool:
+    """analiza si la frase recibida contiene una letra
+
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: bool: True si la contraseña contiene una letra, False en caso contrario.
+    """
     letra = False
 
     for i in range(len(contrasenia)):
@@ -9,7 +15,13 @@ def verificar_letra(contrasenia):
 
     return letra
 
-def verificar_numero(contrasenia):
+def verificar_numero(contrasenia:str) -> bool:
+    """analiza si la frase recibida contiene un numero
+
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: bool: True si la contraseña contiene un numero, False en caso contrario.
+    """
     numero = False
 
     for i in range(len(contrasenia)):
@@ -18,7 +30,13 @@ def verificar_numero(contrasenia):
 
     return numero
 
-def verificar_caracter_especial(contrasenia):
+def verificar_caracter_especial(contrasenia:str) -> bool:
+    """analiza si la frase recibida contiene un caracter especial
+
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: bool: True si la contraseña contiene un caracter especial, False en caso contrario.
+    """
     caracter = False
 
     for i in range(len(contrasenia)):
