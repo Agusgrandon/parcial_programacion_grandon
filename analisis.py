@@ -20,7 +20,7 @@ def contar_caracteres(contrasenia:str) -> str:
         elif contrasenia[i] == " ":
             contador_espacio += 1
     
-    mensaje = f"La contraseña tiene {contador_letras} letras, {contador_numeros} numeros, {contador_caracter_especial} caracteres especiales y {contador_espacio} espacios."
+    mensaje = f"La contraseña tiene {contador_letras} letras, {contador_numeros} numeros, {contador_caracter_especial} caracteres especiales y {contador_espacio} espacios.\n"
 
     return mensaje
 
@@ -44,7 +44,7 @@ def buscar_caracter(contrasenia:str) -> str:
         if contador_caracter > 0:
             mensaje = f"El caracter aparece {contador_caracter} veces, y esta en la posicion {posiciones}"
         else:
-            mensaje = f"El caracter ingresado no existe en la contraseña"
+            mensaje = f"El caracter ingresado no existe en la contraseña.\n"
 
     return mensaje
 
@@ -60,7 +60,7 @@ def mostrar_invertida(contrasenia:str) -> str:
     for i in range(len(contrasenia) - 1, -1, -1):
         invertida += contrasenia[i]
 
-    mensaje = f"Contraseña invertida: {invertida}"
+    mensaje = f"Contraseña invertida: {invertida}.\n"
 
     return mensaje
 
@@ -78,9 +78,9 @@ def verificar_palindromo(contrasenia:str) -> str:
         invertida += contrasenia[i]
 
     if invertida == contrasenia:
-        mensaje = f"La palabra es palíndromo "
+        mensaje = f"La palabra es palíndromo.\n"
     else:
-        mensaje = f"La palabra no es palíndromo "
+        mensaje = f"La palabra no es palíndromo.\n"
 
     return mensaje
 

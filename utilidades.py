@@ -47,7 +47,7 @@ def verificar_caracter_especial(contrasenia:str) -> bool:
 
 def menu_de_opciones():
     """Muestra por pantalla el menú principal de opciones del programa."""
-
+    
     print("1) Ingresar contraseña")
     print("2) Validar nivel de seguridad")
     print("3) Contar tipos de caracteres")
@@ -56,7 +56,7 @@ def menu_de_opciones():
     print("6) Generar reporte estadistico")
     print("7) Verificar si es palindromo")
     print("8) Ordenar caracteres de la contraseña")
-    print("9) Salir")
+    print("9) Salir.\n")
 
 def menu_opcion_de_orden(contrasenia:str) -> str:
     """Muestra un menu de opciones para ordenar la contraseña. 

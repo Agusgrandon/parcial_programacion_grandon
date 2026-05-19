@@ -5,15 +5,16 @@ from estadisticas import reporte_estadistico
 
 continuar = True
 
+print("Bienvenido al sistema de procesamiento de contraseñas 👨‍💻.\n")
+
 while continuar:
-    
+
     menu_de_opciones()
     ingresar_opcion = int(input("Ingresa una opcion: "))
 
     match ingresar_opcion: 
         case 1:
             contrasenia = solicitar_contrasenia()
-            print(contrasenia)
         case 2:
             validar_seguridad_de_contrasenia = nivel_de_seguridad(contrasenia)
             print(validar_seguridad_de_contrasenia)
