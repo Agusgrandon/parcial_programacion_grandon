@@ -1,3 +1,5 @@
+from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descendente
+
 def verificar_letra(contrasenia):
     letra = False
 
@@ -37,8 +39,18 @@ def menu_de_opciones():
     print("8) Ordenar caracteres de la contraseña")
     print("9) Salir")
 
-def menu_ordenar_asc_desc():
+def menu_opcion_de_orden(contrasenia):
 
     print("Ingresa la opcion de como queres ordenar la contraseña")
     print("A: De forma ascendente")
     print("B: De forma descendente")
+    opcion = input("Opcion: ")
+
+    if opcion == "a" or opcion == "A":
+        ordenar = ordenar_contraseña_ascendente(contrasenia)
+    elif opcion == "b" or opcion == "B":
+        ordenar = ordenar_contraseña_descendente(contrasenia)
+    else:
+        ordenar = f"La opcion ingresada no es correcta"
+    
+    return ordenar

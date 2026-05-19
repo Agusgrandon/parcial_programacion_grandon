@@ -34,7 +34,8 @@ def reporte_estadistico(contrasenia):
     porcentaje_numeros = (contador_numeros * 100) / longitud
     porcentaje_caracteres_especiales = (contador_caracter_especial * 100) / longitud
 
-    mensaje = (f"El porcentaje de letras en la contraseña es del {porcentaje_letras}%.\n"
+    mensaje = (f"La longitud de la contraseña es de {longitud} caracteres.\n"
+               f"El porcentaje de letras en la contraseña es del {porcentaje_letras}%.\n"
                f"El porcentaje de numeros en la contraseña es del {porcentaje_numeros}%.\n"
                f"El porcentaje de caracteres especiales en la contraseña es del {porcentaje_caracteres_especiales}%.\n")
     
