@@ -46,7 +46,8 @@ def verificar_caracter_especial(contrasenia:str) -> bool:
     return caracter
 
 def menu_de_opciones():
-    
+    """Muestra por pantalla el menú principal de opciones del programa."""
+
     print("1) Ingresar contraseña")
     print("2) Validar nivel de seguridad")
     print("3) Contar tipos de caracteres")
@@ -57,8 +58,14 @@ def menu_de_opciones():
     print("8) Ordenar caracteres de la contraseña")
     print("9) Salir")
 
-def menu_opcion_de_orden(contrasenia):
+def menu_opcion_de_orden(contrasenia:str) -> str:
+    """Muestra un menu de opciones para ordenar la contraseña. 
+    Segun la opcion ingresada por el usuario, la contraseña se ordena de forma ascendente o de forma descendente.
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: retorna la contraseña ordenada de forma ascendente o descendente, o mensaje de error si la opcion no es correcta. 
+    """
     print("Ingresa la opcion de como queres ordenar la contraseña")
     print("A: De forma ascendente")
     print("B: De forma descendente")
