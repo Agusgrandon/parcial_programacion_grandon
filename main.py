@@ -1,6 +1,6 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
-from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo, ordenar_contraseña,ordenar_contraseña_ascendente
-from utilidades import menu_de_opciones
+from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo, ordenar_contraseña_ascendente, ordenar_contraseña_descendente
+from utilidades import menu_de_opciones, menu_ordenar_asc_desc
 from estadisticas import reporte_estadistico
 
 continuar = True
@@ -33,8 +33,14 @@ while continuar:
             palabra_palindromo = verificar_palindromo(contrasenia)
             print(palabra_palindromo)
         case 8:
-            ordenar = ordenar_contraseña_ascendente(contrasenia)
-            print(ordenar)
+            menu_ordenar_asc_desc()
+            opcion = input("Opcion: ")
+            if opcion == "a" or opcion == "A":
+                ordenar_asc = ordenar_contraseña_ascendente(contrasenia)
+                print(ordenar_asc)
+            elif opcion == "b" or opcion == "B":
+                ordenar_desc = ordenar_contraseña_descendente(contrasenia)
+                print(ordenar_desc)
         case 9:
             continuar = False
         case _:

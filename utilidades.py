@@ -36,3 +36,9 @@ def menu_de_opciones():
     print("7) Verificar si es palindromo")
     print("8) Ordenar caracteres de la contraseña")
     print("9) Salir")
+
+def menu_ordenar_asc_desc():
+
+    print("Ingresa la opcion de como queres ordenar la contraseña")
+    print("A: De forma ascendente")
+    print("B: De forma descendente")
