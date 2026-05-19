@@ -1,6 +1,6 @@
 # 🔐 Sistema de Procesamiento de Contraseñas
 
-Proyecto realizado en Python para el análisis y validación de contraseñas utilizando estructuras condicionales, estructuras repetitivas, funciones y validaciones manuales.
+Proyecto realizado en Python para el análisis y validación de contraseñas utilizando estructuras condicionales, funciones y validaciones manuales.
 
 ---
 
@@ -14,7 +14,7 @@ Este programa permite ingresar una contraseña y realizar distintos análisis so
 * Invertir la contraseña.
 * Generar reportes estadísticos.
 * Verificar si es palíndromo.
-* Ordenar caracteres manualmente.
+* Ordenar caracteres de forma ascendente o de forma descendente.
 
 ---
 
