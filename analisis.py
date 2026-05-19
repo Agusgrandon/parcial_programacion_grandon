@@ -1,4 +1,10 @@
-def contar_caracteres(contrasenia):
+def contar_caracteres(contrasenia:str) -> str:
+    """Cuenta la cantidad de letras, numeros, caracteres especiales y espacios que tiene la contraseña del usuario. 
+
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje con el total de letras, numeros, caracteres especiales y espacios.
+    """
     contador_letras = 0
     contador_numeros = 0
     contador_caracter_especial = 0
@@ -18,8 +24,14 @@ def contar_caracteres(contrasenia):
 
     return mensaje
 
-def buscar_caracter(contrasenia):
+def buscar_caracter(contrasenia:str) -> str:
+    """Busca un caracter ingresado por el usuario dentro de la contraseña.
+    Recorre la contraseña y verifica cuantas veces aparece el caracter solicitado, además de guardar las posiciones en las que se encuentra.
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje con el total de veces que el caracter especial aparece y su posicion, o mensaje que el caracter no existe.
+    """
     solicitar_caracter = input("Ingresa el caracter que queres buscar: ")
     contador_caracter = 0
     posiciones = []
@@ -36,8 +48,13 @@ def buscar_caracter(contrasenia):
 
     return mensaje
 
-def mostrar_invertida(contrasenia):
+def mostrar_invertida(contrasenia:str) -> str:
+    """Invierte el orden de la contraseña.
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Muestra la contraseña invertida.
+    """
     invertida = ""
 
     for i in range(len(contrasenia) - 1, -1, -1):
@@ -47,8 +64,14 @@ def mostrar_invertida(contrasenia):
 
     return mensaje
 
-def verificar_palindromo(contrasenia):
+def verificar_palindromo(contrasenia:str) -> str:
+    """Verifica si una contraseña es un palindromo.
+    La funcion invierte el orden de la contraseña, y luego compara si el orden invertido es igual a la contraseña.
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje indicando si la contraseña es palindromo o no.
+    """
     invertida = ""
 
     for i in range(len(contrasenia) - 1, -1, -1):
@@ -61,8 +84,13 @@ def verificar_palindromo(contrasenia):
 
     return mensaje
 
-def ordenar_contraseña_ascendente(contrasenia):
+def ordenar_contraseña_ascendente(contrasenia:str) -> str:
+    """Ordena de forma ascendente una contraseña. 
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje indicando la contraseña ordenada de forma ascendente.
+    """
     lista_caracteres = []
 
     for i in range(len(contrasenia)):
@@ -83,8 +111,13 @@ def ordenar_contraseña_ascendente(contrasenia):
 
     return resultado
 
-def ordenar_contraseña_descendente(contrasenia):
+def ordenar_contraseña_descendente(contrasenia:str) -> str:
+    """Ordena de forma descendente una contraseña. 
 
+    Args: contrasenia (str): Contraseña ingresada por el usuario.
+
+    Returns: str: Mensaje indicando la contraseña ordenada de forma descendente.
+    """
     lista_caracteres = []
 
     for i in range(len(contrasenia)):
