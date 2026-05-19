@@ -5,10 +5,10 @@ def solicitar_contrasenia() -> str:
 
     Returns: str: contraseña ingresada por el usuario.
     """
-    contrasenia = input("Ingresa tu contraseña: ")
+    contrasenia = input("Ingresa tu contraseña, debe contener al menos 1 letra y tener al menos 8 caracteres: ")
     letra = verificar_letra(contrasenia)
     while len(contrasenia) == 0 or contrasenia[0] == ' ' or len(contrasenia) < 8 or letra == False: 
-        contrasenia = input("Error, reingresa tu contraseña: ")
+        contrasenia = input("La contraseña ingresada no tiene los requisitos basicos, intentalo nuevamente: ")
         letra = verificar_letra(contrasenia)
 
     return contrasenia
@@ -24,11 +24,13 @@ def nivel_de_seguridad(contrasenia:str) -> str:
     verificar_numeros = verificar_numero(contrasenia)
     verificar_caracter = verificar_caracter_especial(contrasenia)
 
-    if verificar_numeros == True and verificar_letras ==  True and verificar_caracter == True and len(contrasenia) >= 12:
+    if verificar_numeros and verificar_letras and verificar_caracter and len(contrasenia) >= 12:
         mensaje = "contraseña muy segura"
-    elif verificar_letras == True and verificar_numeros == True:
+    elif verificar_letras and verificar_numeros:
         mensaje = "contraseña media"
-    elif (len(contrasenia) >= 8 and len(contrasenia) <= 9) and verificar_letras == True:
+    elif (len(contrasenia) >= 8 and len(contrasenia) <= 9) and verificar_letras:
         mensaje = "Contraseña debil"
+    else:
+        mensaje = "contraseña segura"
 
     return mensaje
