@@ -28,6 +28,7 @@ while continuar:
             print(mostrar_contraseña_invertida)
         case 6:
             generar_reporte_estadistico = reporte_estadistico(contrasenia)
+            print(generar_reporte_estadistico)
         case 7:
             palabra_palindromo = verificar_palindromo(contrasenia)
             print(palabra_palindromo)
