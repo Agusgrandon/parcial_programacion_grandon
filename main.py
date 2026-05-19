@@ -1,6 +1,7 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
 from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo
 from utilidades import menu_de_opciones
+from estadisticas import reporte_estadistico
 
 continuar = True
 
@@ -26,7 +27,7 @@ while continuar:
             mostrar_contraseña_invertida = mostrar_invertida(contrasenia)
             print(mostrar_contraseña_invertida)
         case 6:
-            print("hola")
+            generar_reporte_estadistico = reporte_estadistico(contrasenia)
         case 7:
             palabra_palindromo = verificar_palindromo(contrasenia)
             print(palabra_palindromo)
