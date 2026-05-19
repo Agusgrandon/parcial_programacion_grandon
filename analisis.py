@@ -41,12 +41,12 @@ def buscar_caracter(contrasenia:str) -> str:
             contador_caracter += 1
             posiciones += [i]
 
-        if contador_caracter == 1:
-            mensaje = f"El caracter aparece {contador_caracter} vez, y se encuentra en la posicion {posiciones}.\n"
-        elif contador_caracter >= 2:
-            mensaje = f"El caracter aparece {contador_caracter} veces, y se encuentra en las posiciones {posiciones}.\n"
-        else:
-            mensaje = f"El caracter ingresado no existe en la contraseña.\n"
+    if contador_caracter == 1:
+        mensaje = f"El caracter aparece {contador_caracter} vez, y se encuentra en la posicion {posiciones}.\n"
+    elif contador_caracter >= 2:
+        mensaje = f"El caracter aparece {contador_caracter} veces, y se encuentra en las posiciones {posiciones}.\n"
+    else:
+        mensaje = f"El caracter ingresado no existe en la contraseña.\n"
 
     return mensaje
 
