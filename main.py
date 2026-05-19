@@ -20,7 +20,7 @@ while continuar:
         print("Adiós 👋")
     else:
         if not verificar_ingreso_contrasenia:
-            print("Primero debes ingresar la contraseña")
+            print("Primero debes ingresar la contraseña ✍")
         else:
             match ingresar_opcion: 
                 case 2:
