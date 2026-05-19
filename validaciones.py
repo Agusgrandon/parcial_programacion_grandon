@@ -72,8 +72,8 @@ def nivel_de_seguridad(contrasenia:str) -> str:
     elif verificar_letras and verificar_numeros:
         mensaje = "La contraseña tiene un nivel de seguridad media, te sugerimos crear una contraseña de 12 caracteres con letras, numeros y caracteres especiales.\n"
     elif (len(contrasenia) >= 8 and len(contrasenia) <= 9) and verificar_letras:
-        mensaje = "Tu contraseña es debil, te sugerimos agregarle un numero y un caracter especial.\n"
+        mensaje = "Tu contraseña es debil, te sugerimos crear una contraseña de 12 caracteres con letras, numeros y caracteres especiales.\n"
     else:
-        mensaje = "Tu contraseña es debil, te sugerimos agregarle un numero y un caracter especial.\n"
+        mensaje = "Tu contraseña es debil, te sugerimos crear una contraseña de 12 caracteres con letras, numeros y caracteres especiales.\n"
 
     return mensaje
