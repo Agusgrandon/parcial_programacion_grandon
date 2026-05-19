@@ -1,5 +1,5 @@
 from validaciones import solicitar_contrasenia, nivel_de_seguridad
-from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo
+from analisis import contar_caracteres, buscar_caracter, mostrar_invertida, verificar_palindromo, ordenar_contraseña,ordenar_contraseña_ascendente
 from utilidades import menu_de_opciones
 from estadisticas import reporte_estadistico
 
@@ -33,7 +33,8 @@ while continuar:
             palabra_palindromo = verificar_palindromo(contrasenia)
             print(palabra_palindromo)
         case 8:
-            print("hola")
+            ordenar = ordenar_contraseña_ascendente(contrasenia)
+            print(ordenar)
         case 9:
             continuar = False
         case _:

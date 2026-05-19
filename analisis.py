@@ -32,7 +32,7 @@ def buscar_caracter(contrasenia):
         if contador_caracter > 0:
             mensaje = f"El caracter aparece {contador_caracter} veces, y esta en la posicion {posiciones}"
         else:
-            mensaje = f"No se encontro el caracter ingresado"
+            mensaje = f"El caracter ingresado no existe en la contraseña"
 
     return mensaje
 
@@ -61,4 +61,25 @@ def verificar_palindromo(contrasenia):
 
     return mensaje
 
+def ordenar_contraseña_ascendente(contrasenia):
+
+    lista_caracteres = []
+
+    for i in range(len(contrasenia)):
+        lista_caracteres += [contrasenia[i]]
+
+    longitud = len(lista_caracteres)
+
+    for i in range(longitud):
+        for j in range(longitud - i - 1):
+            if lista_caracteres[j] > lista_caracteres[j +1]:
+                auxiliar = lista_caracteres[j] 
+                lista_caracteres[j] = lista_caracteres[j +1] 
+                lista_caracteres[j +1] = auxiliar
+
+    resultado = ""
+    for i in range(longitud):
+        resultado += lista_caracteres[i]
+
+    return resultado
   
