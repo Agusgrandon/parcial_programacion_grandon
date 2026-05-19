@@ -32,7 +32,7 @@ def buscar_caracter(contrasenia:str) -> str:
 
     Returns: str: Mensaje con el total de veces que el caracter especial aparece y su posicion, o mensaje que el caracter no existe.
     """
-    solicitar_caracter = input("Ingresa el caracter que queres buscar: ")
+    solicitar_caracter = input("Ingresa el caracter que queres buscar ( ! “ # $ % & ‘( ) * + , - . / ): ")
     contador_caracter = 0
     posiciones = []
 
