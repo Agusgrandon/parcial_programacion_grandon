@@ -37,5 +37,6 @@ while continuar:
             print(opcion_de_ordenar)
         case 9:
             continuar = False
+            print("Adiós 👋")
         case _:
             print("La opcion ingresada no es correcta, intentelo nuevamente")
