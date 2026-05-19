@@ -108,8 +108,10 @@ def ordenar_contraseña_ascendente(contrasenia:str) -> str:
     resultado = ""
     for i in range(longitud):
         resultado += lista_caracteres[i]
+    
+    mensaje = f"Contraseña ordenada de forma ascendente: {resultado}\n"
 
-    return resultado
+    return mensaje
 
 def ordenar_contraseña_descendente(contrasenia:str) -> str:
     """Ordena de forma descendente una contraseña. 
@@ -136,4 +138,6 @@ def ordenar_contraseña_descendente(contrasenia:str) -> str:
     for i in range(longitud):
         resultado += lista_caracteres[i]
 
-    return resultado
+    mensaje = f"Contraseña ordenada de forma descendente: {resultado}\n"
+
+    return mensaje
