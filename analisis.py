@@ -82,4 +82,25 @@ def ordenar_contraseña_ascendente(contrasenia):
         resultado += lista_caracteres[i]
 
     return resultado
-  
+
+def ordenar_contraseña_descendente(contrasenia):
+
+    lista_caracteres = []
+
+    for i in range(len(contrasenia)):
+        lista_caracteres += [contrasenia[i]]
+
+    longitud = len(lista_caracteres)
+
+    for i in range(longitud):
+        for j in range(longitud - i - 1):
+            if lista_caracteres[j] < lista_caracteres[j +1]:
+                auxiliar = lista_caracteres[j] 
+                lista_caracteres[j] = lista_caracteres[j +1] 
+                lista_caracteres[j +1] = auxiliar
+
+    resultado = ""
+    for i in range(longitud):
+        resultado += lista_caracteres[i]
+
+    return resultado
