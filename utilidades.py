@@ -2,7 +2,7 @@ from analisis import ordenar_contraseña_ascendente, ordenar_contraseña_descend
 
 def titulo_del_programa():
     """Muestra por pantalla el titulo del programa."""
-    
+
     print("Bienvenido al sistema de procesamiento de contraseñas 👨‍💻.\n")
 
 def menu_de_opciones():
